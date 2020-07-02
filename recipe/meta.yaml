@@ -1,5 +1,5 @@
 {% set name = "locustio" %}
-{% set version = "0.13.5" %}
+{% set version = "0.999" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 8d62c05ee4a0336db44a3aba94c7f8d6b604a7a3c98cbf6e434b72c87e73a804
+  sha256: 0de762aec06c16f47339d781939a1015f74cf126ee58930b784072c465ab0783
 
 build:
   number: 0
