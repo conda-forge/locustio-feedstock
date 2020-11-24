@@ -1,5 +1,5 @@
 {% set name = "locustio" %}
-{% set version = "0.13.5" %}
+{% set version = "1.4.1" %}
 
 
 package:
@@ -7,8 +7,9 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 8d62c05ee4a0336db44a3aba94c7f8d6b604a7a3c98cbf6e434b72c87e73a804
+  fn: locustio-{{version}}.tar.gz
+  url: https://github.com/locustio/locust/archive/{{version}}.tar.gz
+  sha256: b8c99fcf9fa538f26f2eaeeed72ee9b5299288939da4fc61d71981fae693ec42
 
 build:
   number: 0
@@ -24,9 +25,11 @@ requirements:
   run:
     - configargparse >=0.15.1
     - flask >=0.10.1
+    - flask-basicauth
     - gevent >=1.5
     - geventhttpclient >=1.3.1
     - msgpack-python >=0.4.2
+    - psutil
     - python
     - pyzmq >=16.0.2
     - requests >=2.9.1
