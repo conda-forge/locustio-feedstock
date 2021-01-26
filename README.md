@@ -5,11 +5,9 @@ Home: https://locust.io/
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/locustio-feedstock/blob/master/LICENSE.txt)
 
 Summary: Website load testing framework
-
-
 
 Current build status
 ====================
