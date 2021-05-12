@@ -1,5 +1,5 @@
 {% set name = "locustio" %}
-{% set version = "1.5.1" %}
+{% set version = "1.5.2" %}
 
 
 package:
@@ -9,7 +9,7 @@ package:
 source:
   fn: locustio-{{ version }}.tar.gz
   url: https://github.com/locustio/locust/archive/{{ version }}.tar.gz
-  sha256: d7dd2800ca91635f90be0ba7014b362a69b8726291b2cbfb2f69a991c71cfef4
+  sha256: eef7999b4be02404a75d76f62d5cb20176fcbfaf27907723a9bacd19a39b441a
 
 build:
   number: 0
